@@ -19,9 +19,9 @@ namespace leap_year_kata2.Test
 
     public class LeapYear
     {
-        public static bool IsLeap(int i)
+        public static bool IsLeap(int year)
         {
-            throw new NotImplementedException();
+            return false;
         }
     }
 }
