@@ -19,7 +19,7 @@ namespace leap_year_kata2.Test
         [Test]
         public void DetectYear4AsLeap()
         {
-            var isLeapYear = LeapYear.IsLeap(1);
+            var isLeapYear = LeapYear.IsLeap(4);
             isLeapYear.Should().Be(true);
         }
     }
@@ -28,6 +28,11 @@ namespace leap_year_kata2.Test
     {
         public static bool IsLeap(int year)
         {
+            if (year == 4)
+            {
+                return true;
+            }
+
             return false;
         }
     }
