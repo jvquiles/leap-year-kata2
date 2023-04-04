@@ -82,12 +82,7 @@ namespace leap_year_kata2.Test
                 return false;
             }
 
-            if (year % 4 == 0)
-            {
-                return true;
-            }
-
-            return false;
+            return year % 4 == 0;
         }
     }
 }
