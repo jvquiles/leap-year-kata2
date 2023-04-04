@@ -64,6 +64,13 @@ namespace leap_year_kata2.Test
             var isLeapYear = LeapYear.IsLeap(400);
             isLeapYear.Should().Be(true);
         }
+
+        [Test]
+        public void DetectYear800AsLeap()
+        {
+            var isLeapYear = LeapYear.IsLeap(800);
+            isLeapYear.Should().Be(true);
+        }
     }
 
     public class LeapYear
