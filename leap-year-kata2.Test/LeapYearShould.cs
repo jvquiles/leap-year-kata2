@@ -63,7 +63,7 @@ namespace leap_year_kata2.Test
     {
         public static bool IsLeap(int year)
         {
-            if (year == 100 || year == 200 || year == 300)
+            if (year % 100 == 0)
             {
                 return false;
             }
